@@ -38,6 +38,8 @@ If the number is smaller than -999, you must print "too small".
 If the number is negative, you must print "minus" before it.
 If the number is not built up of three digits, you shouldn't print it.
 */
+
+/*
 int numberHundreds;
 
 String convert(int numberHundreds)
@@ -74,6 +76,19 @@ else if (numberHundreds < -999)
 else
 {
     Console.WriteLine("That number is too small");
+}
+
+Console.ReadKey();
+*/
+//Timer example
+
+int update=0;
+Timer myTimer = new Timer(test,null,0,2000);
+
+void test(object o)
+{
+    Console.WriteLine(update);
+    update++;
 }
 
 Console.ReadKey();
